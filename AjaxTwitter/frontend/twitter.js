@@ -7,4 +7,11 @@ $(document).ready( function() {
   for(var i = 0; i < buttons.length; i++) {
     new window.FollowToggle(buttons[i]);
   }
+
+  var searchParties = document.querySelectorAll('nav.users-search');
+
+  for(var i = 0; i < searchParties.length; i++) {
+    new window.UsersSearch(searchParties[i]);
+  }
+
 });
